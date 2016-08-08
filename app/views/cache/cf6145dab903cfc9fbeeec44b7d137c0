@@ -1,0 +1,10 @@
+<?php $__env->startSection('content'); ?>
+<div class="containder">
+	<div class="jumbotron" style="background:lime;">
+		<h1 class="text-center" style="color:white;"> <?php echo e(isset($note) ? $note : ''); ?></h1>
+	</div>
+
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts/app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

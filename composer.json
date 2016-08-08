@@ -1,0 +1,10 @@
+{
+    "require": {
+        "xiaoler/blade": "^0.2.2"
+    },
+    "autoload": {
+    	"classmap": [
+    		"lib"
+    	]
+    }
+}
