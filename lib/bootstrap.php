@@ -4,7 +4,7 @@
 require BASE_PATH . 'vendor/autoload.php';
 
 /**
- * Compile Blade.
+ * Compile Blade &or render the view.
  *
  * @param  string $view
  * @param  array $data
