@@ -10,9 +10,8 @@
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="{{BASE_URL}}res/plugins/bootstrap/css/bootstrap.min.css">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="{{BASE_URL}}res/plugins/bootstrap/css/bootstrap-theme.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="{{BASE_URL}}res/css/app.css">
 
     @yield('links')
 
@@ -24,15 +23,22 @@
     <![endif]-->
     </head>
 <body>
-
+    @include('partials.nav')
     @yield('content')
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="{{BASE_URL}}js/jquery-1.11.3.min.js"></script>
+    <script src="{{BASE_URL}}res/js/jquery-1.11.3.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="{{BASE_URL}}res/plugins/bootstrap/js/bootstrap.min.js"></script>
-
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{{BASE_URL}}res/js/set_active_link.js"></script>
+    <script>
+        addActiveLink({
+            linksSelector: '#navbar a',
+            root: '/php_static_router/',
+        });
+    </script>
     @yield('scripts')
 
 </body>
