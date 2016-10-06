@@ -23,7 +23,7 @@
     <![endif]-->
     </head>
 <body>
-    @include('partials.nav')
+
     @yield('content')
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -36,7 +36,7 @@
     <script>
         addActiveLink({
             linksSelector: '#navbar a',
-            root: '/php_static_router/',
+            root: '/',
         });
     </script>
     @yield('scripts')
